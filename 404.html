@@ -1,31 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-TW">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>正在前往新站點 - 聆聽的河流</title>
+  <link rel="canonical" href="https://listenriver.com/">
+  <meta http-equiv="refresh" content="0; url=https://listenriver.com/">
   <script>
-    // === 改成你的新主站 ===
-    var targetDomain = "https://listenriver.com";
-
-    // 取得目前路徑（例如 /blog/閱讀心得/xxx）
-    var currentPath = window.location.pathname;
-
-    // 如果路徑是根目錄，就直接跳首頁
-    if (currentPath === "/" || currentPath === "") {
-      window.location.replace(targetDomain + "/");
-    } else {
-      // 把 github.io 的舊路徑直接接到新站（新站如果沒有完全一樣的短路徑，會顯示 404 或你自己的 404 頁）
-      window.location.replace(targetDomain + currentPath + window.location.search);
-    }
+    const target = "https://listenriver.com";
+    const path = window.location.pathname || "/";
+    window.location.replace(target + path + window.location.search + window.location.hash);
   </script>
-  <noscript>
-    <meta http-equiv="refresh" content="0; url=https://listenriver.com/">
-  </noscript>
 </head>
 <body>
-  <p>網站已搬遷至 <strong>https://listenriver.com</strong></p>
-  <p>正在自動跳轉，請稍候...</p>
-  <p>若沒有自動跳轉，請 <a href="https://listenriver.com/">點此前往新站</a></p>
+  <p>網站已搬遷至 <a href="https://listenriver.com/">https://listenriver.com/</a></p>
 </body>
 </html>
