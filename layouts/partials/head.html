@@ -1,4 +1,15 @@
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CVT1GXVFYJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CVT1GXVFYJ');
+</script>
+  <meta name="google-site-verification" content="vswiIzJdQTXcFgD3cz6gVxQM0MlGptCbhStrtNZaKT8" />
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
@@ -17,7 +28,7 @@
     {{ end }}
   </title>
 
-<meta name="google-site-verification" content="vswiIzJdQTXcFgD3cz6gVxQM0MlGptCbhStrtNZaKT8" />
+
 <!-- Vercel Web Analytics -->
 {{ if .Site.Params.vercel_analytics }}
 <script>
